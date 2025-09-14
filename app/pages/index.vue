@@ -1,3 +1,5 @@
 <template>
-  <HelloWorld />
+  <div class="main">
+    <DayLogView />
+  </div>
 </template>
