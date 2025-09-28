@@ -1,5 +1,3 @@
 <template>
-  <div class="main">
-    <DayLogView />
-  </div>
+  <TrainingSession />
 </template>

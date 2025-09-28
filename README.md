@@ -4,7 +4,8 @@
 
 - [x] deploy to netlify
 - [x] create hello-world page
-- [ ] setup daily log view (date, workout, notes)
+- [x] setup daily log view (date, workout, notes)
+- [ ] setup Clean archtieture starter for business logic
 - [ ] setup a form to add/edit entries
 - [ ] setup a list to browse past logs
 - [ ] setup db connection
