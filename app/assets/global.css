@@ -1,12 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
     font-family: Roboto, sans-serif;
     font-size: 14px;
     font-weight: 400;
     --padding: 16px;
+    --padding-small: 8px;
+    --border-radius: 8px;
 }
 
-.main {
+main {
     max-width: 600px;
     margin: 0 auto;
+    height: 100svh;
+}
+
+nav {
+    background-color: #1976d2;
+    color: white;
     padding: var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: var(--padding-small);
 }
