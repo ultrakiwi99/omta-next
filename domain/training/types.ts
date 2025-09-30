@@ -20,3 +20,11 @@ export type TrainingSession = {
         isCompleted: boolean;
     }[]
 }
+
+export type Exersise = {
+    id: string;
+    name: string;
+    sets: number;
+    reps: number;
+    weight: number;
+}

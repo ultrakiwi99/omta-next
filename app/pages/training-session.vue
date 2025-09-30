@@ -1,5 +1,5 @@
 <script setup>
-import TrainingSessionDetails from '~/components/TrainingSessionDetails.vue';
+import TrainingSessionDetails from '~/components/training/ExerciseDetails.vue';
 import { ref } from 'vue';
 
 const sessionData = ref({
