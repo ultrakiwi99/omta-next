@@ -1,4 +1,8 @@
 <script setup>
+import { ref } from 'vue';
+
+const isOpen = ref(false);
+
 defineProps({
     exercise: {
         id: String,
@@ -11,9 +15,9 @@ defineProps({
 </script>
 
 <template>
-    <details class="mb-4 p-4 border border-gray-300 rounded shadow">
-        <summary class="font-semibold">{{ exercise.name }}</summary>
-        <table class="w-full mt-2 table-auto border-collapse">
+    <div class="mb-4 p-4 border border-gray-300 rounded shadow">
+        <button class="w-full text-left" @click="isOpen = !isOpen">{{ exercise.name }}</button>
+        <table class="w-full mt-4 table-auto border-collapse" v-show="isOpen">
             <thead class="bg-gray-100">
                 <tr class="text-left">
                     <th class="px-2 py-1">Set</th>
@@ -32,7 +36,7 @@ defineProps({
                 </tr>
             </tbody>
         </table>
-    </details>
+    </div>
 </template>
 
 <style lang="css" scoped></style>
