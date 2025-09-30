@@ -1,4 +1,4 @@
-export type TrainingSystem = {
+type TrainingSystem = {
     id: string;
     name: string;
     exercises: {
@@ -10,7 +10,7 @@ export type TrainingSystem = {
     }[]
 }
 
-export type TrainingSession = {
+type TrainingSession = {
     id: string;
     date: string;
     isFinished: boolean;
@@ -21,7 +21,7 @@ export type TrainingSession = {
     }[]
 }
 
-export type Exersise = {
+type Exercise = {
     id: string;
     name: string;
     sets: number;

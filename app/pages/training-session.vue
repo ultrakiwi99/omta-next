@@ -1,6 +1,6 @@
-<script setup>
-import TrainingSessionDetails from '~/components/training/ExerciseDetails.vue';
+<script setup lang="ts">
 import { ref } from 'vue';
+import ExerciseDetails from '../components/training/ExerciseDetails.vue';
 
 const sessionData = ref({
     date: new Date().toLocaleDateString(),
@@ -10,6 +10,14 @@ const sessionData = ref({
         { name: 'Exercise 3', details: 'Details about exercise 3' },
     ],
 });
+
+const exercise = {
+    id: '1',
+    name: 'Squat',
+    sets: 4,
+    reps: 8,
+    weight: 100
+};
 
 </script>
 
@@ -23,12 +31,7 @@ const sessionData = ref({
         <section class="training-session">
             <h1>Training Session</h1>
             <p>This is where the training session details will go.</p>
-            <TrainingSessionDetails />
-            <TrainingSessionDetails />
-            <TrainingSessionDetails />
-            <TrainingSessionDetails />
-            <TrainingSessionDetails />
-            <TrainingSessionDetails />
+            <ExerciseDetails :exercise="exercise" />
         </section>
     </main>
 </template>

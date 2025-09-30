@@ -1,6 +1,6 @@
 import {  mountSuspended } from '@nuxt/test-utils/runtime';
 import { it, expect, describe } from 'vitest';
-import SessionDetails from './ExerciseDetails.vue';
+import SessionDetails from './exercise-details.vue';
 
 describe('SessionDetails', () => {
     it('can mount the component and render props', async () => {
