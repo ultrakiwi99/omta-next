@@ -16,7 +16,11 @@ defineProps({
 
 <template>
     <div class="mb-4 p-4 border border-gray-300 rounded shadow">
-        <button class="w-full text-left" @click="isOpen = !isOpen">{{ exercise.name }}</button>
+        <button class="w-full text-left font-semibold text-gray-700" @click="isOpen = !isOpen">
+            {{ exercise.name }}
+            <span class="float-right text-sm text-gray-400">
+                {{ exercise.weight }} kg x {{ exercise.reps }} x {{ exercise.sets }}</span>
+        </button>
         <table class="w-full mt-4 table-auto border-collapse" v-show="isOpen">
             <thead class="bg-gray-100">
                 <tr class="text-left">
